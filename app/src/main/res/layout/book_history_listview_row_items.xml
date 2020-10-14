@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:background="@drawable/border"
+    android:baselineAligned="false" >
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false" >
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:baselineAligned="false" >
+
+            <TextView
+                android:id="@+id/txt_book_history_sno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/border"
+                android:ems="4"
+                android:gravity="center"
+                android:padding="10dip"
+                android:text="S.No"
+                android:textColor="#4D4B4B" />
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false" >
+
+            <TextView
+                android:id="@+id/txt_book_history_book_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/border"
+                android:ems="15"
+                android:gravity="center"
+                android:padding="10dip"
+                android:text="Book Name"
+                android:textColor="#4D4B4B" />
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:baselineAligned="false" >
+
+            <TextView
+                android:id="@+id/txt_book_history_book_isbn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/border"
+                android:ems="8"
+                android:gravity="center"
+                android:padding="10dip"
+                android:text="ISBN"
+                android:textColor="#4D4B4B" />
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:baselineAligned="false" >
+
+            <TextView
+                android:id="@+id/txt_book_history_doissue"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1.2"
+                android:background="@drawable/border"
+                android:ems="12"
+                android:gravity="center"
+                android:padding="10dip"
+                android:text="Date of Issue"
+                android:textColor="#4D4B4B" />
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:baselineAligned="false" >
+
+            <TextView
+                android:id="@+id/txt_book_history_doreturn"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1.2"
+                android:background="@drawable/border"
+                android:ems="12"
+                android:gravity="center"
+                android:padding="10dip"
+                android:text="Date of Return"
+                android:textColor="#4D4B4B" />
+        </TableLayout>
+    </TableRow>
+
+</TableLayout>

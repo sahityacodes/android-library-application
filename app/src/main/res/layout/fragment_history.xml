@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/teal_background">
+
+    <TextView
+        android:layout_width="429dp"
+        android:layout_height="155dp"
+        android:text="No history"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:id="@+id/nohistory"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <HorizontalScrollView
+        android:id="@+id/scrollview_stud"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TableLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:baselineAligned="false">
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:baselineAligned="false">
+
+                    <TableLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:baselineAligned="false">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/border"
+                            android:ems="4"
+                            android:gravity="center"
+                            android:padding="10dip"
+                            android:text="S.No"
+                            android:textColor="#000000"
+                            android:textStyle="bold" />
+                    </TableLayout>
+
+                    <TableLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:baselineAligned="false">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/border"
+                            android:ems="15"
+                            android:gravity="center"
+                            android:padding="10dip"
+                            android:text="Book Name"
+                            android:textColor="#000000"
+                            android:textStyle="bold" />
+                    </TableLayout>
+
+                    <TableLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:baselineAligned="false">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/border"
+                            android:ems="8"
+                            android:gravity="center"
+                            android:padding="10dip"
+                            android:text="ISBN"
+                            android:textColor="#000000"
+                            android:textStyle="bold" />
+                    </TableLayout>
+
+                    <TableLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.2"
+                            android:background="@drawable/border"
+                            android:ems="12"
+                            android:gravity="center"
+                            android:padding="10dip"
+                            android:text="Date of Issue"
+                            android:textColor="#000000"
+                            android:textStyle="bold" />
+                    </TableLayout>
+
+                    <TableLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:baselineAligned="false">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.2"
+                            android:background="@drawable/border"
+                            android:ems="12"
+                            android:gravity="center"
+                            android:padding="10dip"
+                            android:text="Date of Return"
+                            android:textColor="#050505"
+                            android:textStyle="bold" />
+                    </TableLayout>
+                </TableRow>
+            </TableLayout>
+
+            <ListView
+                android:id="@+id/listView_stud_book_history"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="#000000"
+                android:dividerHeight="0dp"></ListView>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

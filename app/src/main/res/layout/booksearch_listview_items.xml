@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/header"
+    android:background="@color/whiteTextColor"
+    android:orientation="horizontal"
+    android:padding="10dip" >
+
+    <ImageView
+        android:id="@+id/img_view_book_search_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"/>
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="1dip"
+        android:layout_toRightOf="@+id/img_view_book_search_image" >
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:baselineAligned="false" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_weight="1"
+                android:text="ISBN"
+                android:textColor="#000000"
+                android:textSize="15dp"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:id="@+id/txt_book_search_isbn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:text="1234567890"
+                android:textColor="#000000"
+                android:textSize="15dp"
+                android:textStyle="bold|italic" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:baselineAligned="false" >
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_weight="1"
+                android:text="Book Name"
+                android:textColor="#000000"
+                android:textSize="15dp"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:id="@+id/txt_book_search_name"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:text="Book name"
+                android:textColor="#020202"
+                android:textSize="15dp"
+                android:textStyle="bold|italic" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:baselineAligned="false" >
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_weight="1"
+                android:text="Author"
+                android:textColor="#020202"
+                android:textSize="15dp"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:id="@+id/txt_book_search_author"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:text="author name"
+                android:textColor="#020202"
+                android:textSize="15dp"
+                android:textStyle="bold|italic" />
+        </TableRow>
+    </TableLayout>
+
+</RelativeLayout>

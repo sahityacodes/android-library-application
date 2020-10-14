@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_student_history"
+        android:icon="@drawable/ic_student_history"
+        android:title="@string/title_history" />
+
+    <item
+        android:id="@+id/navigation_reserved_books"
+        android:icon="@drawable/ic_reserved_books"
+        android:title="@string/title_reserved_books" />
+
+</menu>

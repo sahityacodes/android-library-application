@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:alpha="0.9"
+    android:background="@drawable/teal_background"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Aboutus" >
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_aboutus"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:contentDescription="Contact Us"
+        app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+
+    <RelativeLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#CD3750"
+        android:gravity="center" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="2dp"
+            android:text="University of Genoa"
+            android:textColor="#fff"
+            android:textSize="12sp"
+            android:textStyle="bold|italic" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar_aboutus"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:text="The library has different expectations and it functions 24/7 for student convenience . We have service desk and starbucks cafe . Cellphones are permitted but please set cell phones to silent or vibrate mode .The library is tobacco free . \n\nCharges :\nThere will be 25 cent per item , per day , over due fine applied on books .
+Four weeks after the overdue period has begun , the item will be considered lost and replacement will be issued.\n\nPolicy :\nUpto 4 books can be borrowed at a time . Renewals are not permitted."
+        android:textColor="#070707"
+        android:typeface="serif" />
+
+</RelativeLayout>

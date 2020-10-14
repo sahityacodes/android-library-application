@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_library_navigation"
+    app:startDestination="@+id/navigation_reserved_books">
+
+    <fragment
+        android:id="@+id/navigation_student_history"
+        android:name="com.lib.fragments.LibrarianTrackingStudentHistoryFragment"
+        android:label="@string/title_student_search"
+        tools:layout="@layout/fragment_trackingstudhistory" />
+
+    <fragment
+        android:id="@+id/navigation_reserved_books"
+        android:name="com.lib.fragments.LibrarianStudReservedBooksFragment"
+        android:label="@string/title_student_reserved_books"
+        tools:layout="@layout/fragment_studreservedbooks" />
+
+</navigation>

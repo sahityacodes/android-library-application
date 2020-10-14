@@ -1,0 +1,191 @@
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:alpha="0.9"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/teal_background"
+    tools:context=".Contactus" >
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_contactus"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:contentDescription="Contact Us"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+
+    <RelativeLayout
+        android:id="@+id/content"
+        android:layout_below="@+id/toolbar_contactus"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" />
+
+        <LinearLayout
+            android:id="@+id/layout1"
+            android:layout_width="408dp"
+            android:layout_height="356dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginBottom="3dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:paddingLeft="10dp"
+                    android:text="Do you need information on the book loan or do you want to know how to reach the locations and sections of the libraries?
+Always refer to the pages of the school Libraries or University Poles and contact your library:"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="italic" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/libname"
+                    android:layout_width="388dp"
+                    android:layout_height="39dp"
+                    android:layout_marginTop="5dp"
+                    android:ems="10"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="2dp"
+                    android:text="University Library of Genoa Details :"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="italic|bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="107dp"
+                    android:layout_height="39dp"
+                    android:layout_marginTop="5dp"
+                    android:ems="10"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="2dp"
+                    android:text="Location "
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:id="@+id/location"
+                    android:layout_width="294dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:ems="10"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="2dp"
+                    android:text="Via Balbi, 40, 16126 Genova GE"
+                    android:textColor="#CF0745"
+                    android:textSize="20sp"
+                    android:textStyle="italic|bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="112dp"
+                    android:layout_height="match_parent"
+                    android:ems="10"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="2dp"
+                    android:text="Telephone "
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:id="@+id/contactno"
+                    android:layout_width="141dp"
+                    android:layout_height="match_parent"
+                    android:ems="10"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="2dp"
+                    android:text="010 254 6464"
+                    android:textColor="#CF0745"
+                    android:textSize="20sp"
+                    android:textStyle="italic|bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="112dp"
+                    android:layout_height="match_parent"
+                    android:ems="10"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="2dp"
+                    android:text="Website "
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:id="@+id/website"
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    android:layout_marginTop="5dp"
+                    android:ems="10"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="2dp"
+                    android:text="http://www.bibliotecauniversitaria.ge.it/it/"
+                    android:textColor="#CF0745"
+                    android:textSize="20sp"
+                    android:textStyle="italic|bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/footer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#CD3750"
+            android:gravity="center" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="University of Genoa"
+                android:textColor="#fff"
+                android:textSize="12sp"
+                android:textStyle="bold|italic" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
